@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Inter",sans-serif;
+}
+
+#navBar{
+    background-color: #007266;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+}
+
+#logo img{
+    height:40px;
+    width: fit-content;
+}
+
+#menuBar{
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    color: white;
+    font-size: 14px;
+}
