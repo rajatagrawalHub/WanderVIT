@@ -4,27 +4,79 @@
 }
 
 body{
-    font-family: "Inter",sans-serif;
+    font-family: "Roboto",sans-serif;
+}
+
+#Container{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+#heroSection{
+    display: flex;
+    flex-direction: column;
+    background: url(./heroPage.png);
+    background-size:cover;    
+    min-height: 100vh;
 }
 
 #navBar{
-    background-color: #007266;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    padding: 12px;
+    padding:14px;
 }
 
-#logo img{
-    height:40px;
+#logoSec img{
+    width: 165px;
+    height: 45px;
+    }
+
+#menuSec{
+    font-family: "Inter",sans-serif;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+    font-size: 16px;
+    color: white;
+    font-weight: 300;
+}
+
+#centerSec{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+#centerDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: fit-content;
 }
 
-#menuBar{
-    display: flex;
-    flex-direction: row;
-    gap: 12px;
+#centerSec img{
+    width: 520px;
+}
+
+.btn{
+    background-color: #F96F0C;
+    border-radius: 24px;
     color: white;
-    font-size: 14px;
+    font-family: "Inter",sans-serif;
+    font-weight: 500;
+    padding: 12px;
+    border: none;
+    box-shadow: 0 4px 4px 0 black;
+}
+
+#centerSec button{
+    align-self:flex-end;
+   position: relative;
+   top: -30px;
 }
