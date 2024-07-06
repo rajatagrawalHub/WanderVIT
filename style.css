@@ -5,6 +5,7 @@
 
 body{
     font-family: "Roboto",sans-serif;
+    background-color: #FFFCF3;
 }
 
 #Container{
@@ -16,9 +17,10 @@ body{
 #heroSection{
     display: flex;
     flex-direction: column;
-    background: url(./heroPage.png);
-    background-size:cover;    
-    min-height: 100vh;
+    background-image:  url(./heroPage.png);
+    background-size: cover;
+    height: 100vh;
+    justify-content: center;
 }
 
 #navBar{
@@ -26,12 +28,14 @@ body{
     flex-direction: row;
     justify-content: space-between;
     padding:14px;
+    max-height: 7vh;
+    flex-shrink: 0;
 }
 
 #logoSec img{
     width: 165px;
     height: 45px;
-    }
+}
 
 #menuSec{
     font-family: "Inter",sans-serif;
@@ -44,12 +48,26 @@ body{
     font-weight: 300;
 }
 
+#menuSec p{
+    cursor: pointer;
+}
+
+.show{
+    display: block;
+}
+
+.hide{
+    display: none;
+    font-size: 24px;
+    margin: 8px;
+}
+
 #centerSec{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    height: 80vh;
+    flex-grow: 1;
 }
 
 #centerDiv{
@@ -58,6 +76,7 @@ body{
     justify-content: center;
     align-items: center;
     width: fit-content;
+    gap: 18px;
 }
 
 #centerSec img{
@@ -66,17 +85,34 @@ body{
 
 .btn{
     background-color: #F96F0C;
-    border-radius: 24px;
+    border-radius: 4px;
     color: white;
     font-family: "Inter",sans-serif;
     font-weight: 500;
     padding: 12px;
     border: none;
-    box-shadow: 0 4px 4px 0 black;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.53);
+    cursor: pointer;
 }
 
-#centerSec button{
-    align-self:flex-end;
-   position: relative;
-   top: -30px;
+@media screen and (min-width:320px) and (max-width:768px) {
+    #centerSec img{
+        width: 320px;
+    }
+
+    #logoSec{
+        display: none;
+    }
+
+    .show{
+        display: none;
+    }
+    
+    .hide{
+        display: block;
+    }
+
+    #navBar{
+        justify-content: flex-end;
+    }
 }
