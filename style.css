@@ -8,16 +8,29 @@ body{
     background-color: #FFFCF3;
 }
 
+::-webkit-scrollbar-track{
+    background-color: #FFFCF3 !important;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #1c1c1c !important;
+    border-radius: 1px;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
 #Container{
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
 }
 
 #heroSection{
     display: flex;
     flex-direction: column;
     background-image:  url(./heroPage.png);
+    background-position: center center;
     background-size: cover;
     height: 100vh;
     justify-content: center;
@@ -95,7 +108,299 @@ body{
     cursor: pointer;
 }
 
+#aboutSection{
+    background: url(./aboutBg.svg);
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 48px;
+    margin-top: 72px;
+}
+
+#about_text{
+    width: 75%;
+    text-align: center;
+}
+
+#textGrand{
+    font-size: 128px;
+    font-weight: 900;
+    text-transform: uppercase;
+    -webkit-text-stroke : 1px rgba(95, 95, 95, 0.15);
+    text-shadow: 0 4px 4px #675757;
+}
+#figureSection{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 60px;
+}
+
+.figureBox{
+    display: flex;
+    flex-direction: row;
+    font-size: 48px;
+    gap: 24px;
+}
+
+.figureText{
+    color: #1c1c1c;
+    font-weight: 900;
+}
+
+.figureTitle{
+    color: #363636;
+    font-weight: 700;
+}
+#featureSection{
+    display: flex;
+    flex-direction: column;
+    margin-top: 72px;
+}
+.titleBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titleText{
+    text-transform: uppercase;
+    font-size: 48px;
+    color: #1c1c1c;
+    font-weight: 900;
+}
+
+.titleDesc{
+    font-size: 14px;
+    font-weight: 300;
+}
+
+#featureCardContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 48px;
+    margin: 48px 36px;
+    row-gap: 24px;
+}
+
+.featureCard{
+    background-color: #F2F2F2;
+    color: #1c1c1c;
+    padding: 6px 48px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 8px;
+    gap: 8px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    animation: top_bottom 1.5s ease-in-out;
+}
+
+.cardImg{
+    width: 60px;
+    height: 60px;
+    margin: 4px;
+}
+
+.cardText{
+    font-weight: 900;
+    font-size: 20px;
+}
+
+#speacialmentionSection{
+    padding: 36px 24px 36px 36px;
+    background: url(./specialMentionBg.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+#speacialmentionSection .titleBox{
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+#speacialmentionSection .titleText, #speacialmentionSection .titleDesc{
+    color: #FFFCF3;
+}
+
+.titleFirstBox{
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+}
+
+.titleFirstBox img{
+    width: 68px;
+    height: 60px;
+}
+
+#sectionBox{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rightArrow{
+    border: 1px solid #FFFCF3;
+    color: #FFFCF3;
+    text-align: center;
+    border-radius: 50%;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+#mentionCardContainer{
+    display: flex;
+    flex-direction: row;
+    gap: 48px;
+    margin: 36px;
+}
+
+.mentionCard{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgba(53, 58, 61,0.64);
+    border: 1px solid rgba(255, 252, 243,0.36);
+    border-radius: 8px;
+    padding: 12px;
+    gap: 12px;
+}
+
+.mentionCard img{
+    width: 120px;
+    height: 120px;
+    border-radius: 12px;
+    box-shadow: 0 4px 4px 0 #1c1c1c;
+}
+
+.starBox{
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+    justify-content: center;
+}
+
+.starBox img{
+    width: 18px;
+    height: 18px;
+}
+
+.mentionLeft{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.mentionRight{
+    color: #FFFCF3;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.mentionTitle{
+    font-weight: bold;
+}
+
+.mentionDesc{
+    font-weight: 100;
+    font-size: 14px;
+}
+
+.bottomBox{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 12px 0;
+}
+
+.learnMoreBtn{
+    padding: 8px;
+    font-size: 12px;
+}
+
+.bottomBox i{
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.smallCase{
+    text-transform: lowercase;
+}
+
+#devSection{
+    padding: 24px;
+}
+
+#devContainer{
+    margin: 36px 48px;
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    padding: 24px;
+}
+
+.devCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}
+
+.devCard img{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 3px solid #1c1c1c;
+}
+
+.devCard .mentionDesc{
+    text-align: center;
+}
+
+#footerSection{
+    background-color: #1c1c1c;
+    color: #FFFCF3;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    padding: 8px;
+    gap: 4px;
+}
+
+#footerSection img{
+    width: 28px;
+    height: 28px;
+}
+
+@keyframes top_bottom {
+    from{
+        transform: translateY(-60px);
+        opacity: 0;
+    }
+
+    to{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+/* Media Query */
 @media screen and (min-width:320px) and (max-width:768px) {
+    #heroSection{
+        background-size: cover;
+        background-position: 0 0;
+    }
     #centerSec img{
         width: 320px;
     }
@@ -112,7 +417,77 @@ body{
         display: block;
     }
 
+    #about_text{
+        width: 100%;
+        margin-top: 4px;
+    }
+
     #navBar{
         justify-content: flex-end;
+    }
+
+    #textGrand{
+        font-size: 48px;
+    }
+
+    #figureSection{
+        gap: 24px;
+    }
+
+    .figureBox{
+        font-size: 22px;
+    }
+
+    #featureCardContainer{
+        flex-wrap: wrap;
+        gap: 0;
+        row-gap: 12px;
+    }
+
+    #mentionCardContainer{
+        flex-wrap: wrap;
+    }
+
+    .featureCard{
+        padding:2px 10px;
+    }
+
+    .cardImg{
+        width: 50px;
+        height: 50px;
+    }
+
+    .cardText{
+        font-size: 16px;
+    }
+
+    .titleText{
+        font-size: 24px;
+    }
+
+    .titleFirstBox img{
+        width: 36px;
+        height: 36px;
+    }
+
+    .mentionCard{
+        flex-direction: column;
+    }
+
+    .mentionLeft{
+        flex-direction: row;
+    }
+
+    .starBox{
+        flex-direction: column;
+    }
+
+    #devContainer{
+        flex-wrap: wrap;
+    }
+
+    .devCard img{
+        width:115px;
+        height: 115px;
     }
 }
